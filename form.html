@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="path/to/bootstrap.css">
+    <title>Form Page</title>
+    <script src="formValidation.js"></script>
+</head>
+
+<body>
+    <h1>Form Page</h1>
+    <form id="imageForm" enctype="multipart/form-data">
+        <label for="imageTitle">Image Title:</label>
+        <input type="text" id="imageTitle" name="imageTitle" required><br><br>
+
+        <label for="imageDescription">Image Description:</label>
+        <input type="text" id="imageDescription" name="imageDescription" required><br><br>
+
+        <label for="image">Image (Minimum 2000px width resolution):</label>
+        <input type="file" id="image" name="image" accept="image/*" required><br><br>
+
+        <label for="category">Category:</label>
+        <select id="category" name="category" required>
+            <option value="">Select Category</option>
+            <option value="people">People</option>
+            <option value="tech">Tech</option>
+            <option value="entertainment">Entertainment</option>
+        </select><br><br>
+
+        <label for="itemForSale">Item for Sale:</label><br>
+        <input type="radio" id="itemForSaleYes" name="itemForSale" value="yes" required>
+        <label for="itemForSaleYes">Yes, Item for Sale</label><br>
+        <input type="radio" id="itemForSaleNo" name="itemForSale" value="no" required>
+        <label for="itemForSaleNo">No, it’s free</label><br><br>
+
+        <label for="itemPrice">Item Price:</label>
+        <input type="text" id="itemPrice" name="itemPrice"><br><br>
+
+        <input type="checkbox" id="acceptTerms" name="acceptTerms" required>
+        <label for="acceptTerms">Accept Terms & Conditions</label><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <script src="path/to/bootstrap.js"></script>
+</body>
+
+</html>
